@@ -8,8 +8,7 @@ body {
 .header-container{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(106, 123, 255);
-    background-image: url('img/WhatsApp\ Image\ 2022-11-04\ at\ 11.59.45.jpeg');
+    background-color: rgb(64, 98, 167);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -19,13 +18,40 @@ body {
     align-items: flex-start;
     box-sizing: border-box;
     padding: 0 112px;
-    position: relative;
+}
+
+.menu-itens{
+    width: auto;
+}
+
+.menu-itens a {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.menu-itens a:hover {
+    color: black;
+    background-color: white;
+    border: 3px white;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+#img-perfil {
+    margin-left:55%;
+    height: 450px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 25%;
 }
 
 h1{
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    max-width: 100%;
 }
 
 h2{
@@ -34,29 +60,35 @@ h2{
 }
 
 .social-media{
-    margin-top: 1rem;
+    margin-bottom: 500px;
     display: flex;
+    max-width: 100%;
 }
 
 .social-media a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 1rem 4rem;
-    border: 1px solid white;
-    min-width: 4rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .5s ease-in-out;
+    
 }
 
-a:hover{
+.social-media a:hover{
+    color: black;
     background-color: white;
+    border-radius: 20px;
+    padding: 1rem 4rem;
 }
 
 .checkbox{
-    height: 100px;
-    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
     position: absolute;
     right: 0;
     top: 0;
@@ -70,6 +102,22 @@ a:hover{
 .checkbox .trace{
     width: 50px;
     height: 2px;
+    background-color: blueviolet;
     border-radius: 4px;
-    transition: 0.5s ease-in-out;
+    position: absolute;
+}
+
+.checkbox-trace:nth-child(1){
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox-trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox-trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
 }
