@@ -82,39 +82,3 @@ h2{
     border-radius: 20px;
     padding: 1rem 4rem;
 }
-
-.checkbox{
-    max-height: 100px;
-    max-width: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display:flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s;
-}
-
-.checkbox .trace{
-    width: 50px;
-    height: 2px;
-    background-color: blueviolet;
-    border-radius: 4px;
-    position: absolute;
-}
-
-.checkbox-trace:nth-child(1){
-    top: 26px;
-    transform: rotate(0);
-}
-
-.checkbox-trace:nth-child(2) {
-    top: 46px;
-    transform: rotate(0);
-}
-
-.checkbox-trace:nth-child(3) {
-    top: 66px;
-    transform: rotate(0);
-}
